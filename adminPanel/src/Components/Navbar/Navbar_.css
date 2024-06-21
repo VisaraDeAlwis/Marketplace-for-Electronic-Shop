@@ -1,0 +1,62 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-shadow: 0 1px 3px -2px #000;
+    margin-bottom: 1px;
+    background: white;
+    position: relative; /* For positioning the centered text */
+}
+
+.nav-logo {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.text {
+    font-size: 25px;
+    font-weight: 900;
+    margin: 0 10px; /* Close to the logo */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+}
+
+.logo-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.nav-profile {
+    width: 75px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-logo {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    .text {
+        font-size: 20px;
+        margin: 5px 0; /* Adjust margin */
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
+    .nav-profile {
+        width: 60px;
+        margin-top: 10px;
+    }
+}
